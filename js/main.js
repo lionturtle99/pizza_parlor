@@ -1,28 +1,36 @@
-function Pizza(size, toppings) {
+class Pizza{
+  constructor(size, toppings) {
   this.size = size;
   this.toppings = toppings;
-  this.price = 0
+  this.price = 0;
 }
-let pizza = new Pizza("20'", ["red-sauce", "cheese"]);
-// console.log(pizza.size)
 
-Pizza.prototype.checkForSize = function() {
-  if (this.size === "18'") {
-    this.price += 20;
-  } else if (this.size === "24'") {
-    this.price += 25;
-  } else {
-    this.price += 30;
+  checkForSize() {
+    if (this.size === "18'") {
+      this.price += 20;
+    } else if (this.size === "24'") {
+      this.price += 25;
+    } else {
+      this.price += 30;
+    }
+    this.checkForToppings();
   }
-  this.checkForToppings();
-  console.log("size is " + this.size)
+  
+  checkForToppings() { 
+    let that = this;
+    this.toppings.forEach(function(i) { 
+      if (i === "prosciutto" || i === "sausage" || i === "pepperoni") {  
+        that.price += 3;  
+      } else if (i === "artichokes" || i === "mama lil peppers") {  
+        that.price += 2;  
+      } else {  
+        that.price += 1; 
+      }  
+    });  
+  } 
 }
 
-Pizza.prototype.checkForToppings = function() {
-  console.log("It made it here")
-  this.toppings.forEach(function(i){
-    console.log(i)
-  })
-}
-
+let pizza = new Pizza("24'", ["red-sauce", "artichokes", "pepperoni"]);
+console.log(pizza.price)
 pizza.checkForSize();
+console.log(pizza.price)
