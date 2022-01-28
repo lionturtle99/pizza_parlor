@@ -1,6 +1,6 @@
-# _Test Driven Development:_
+# Test Driven Development:
 
-### _--- Describe Pizza! ---_
+### --- Describe Pizza! ---
 let testPizza = new Pizza();  
 testPizza.sizes.push(12, 18, 32);  
 testPizza.toppings.push("red sauce", "pesto", "olives", "artichokes", "mushrooms", "pepperoni", "sausage", "feta", "provolone");  
@@ -24,7 +24,8 @@ Code:
     alert("The price of your pizza is " + "$" + total)  
   }  
     
-Expected outcome: "The price of your pizza is $25"  
+Expected outcome: "The price of your pizza is $25" 
+  
 
 Test: "It should loop through items added to pizza object and add to the total price"  
   
