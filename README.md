@@ -1,3 +1,36 @@
+# _Pizza-Parlor_
+
+#### By: _**Liam Eller**_
+
+#### _a webpage practicing objects and prototypes_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Javascript_
+* _jQuery_
+
+## Description
+
+_A webpage where you can order a custom pizza_
+
+## Setup/Installation Requirements
+
+* _Clone the repository from GitHub_
+* _Open the webpage in your preferred browser_
+
+## Known Bugs
+
+_None_
+
+## License
+
+_[MIT](https://opensource.org/licenses/MIT)_  
+  
+Copyright (c) _01/28/2022_ _Liam Eller_  
+  
 # Test Driven Development:
 
 ### --- Describe Pizza! ---
