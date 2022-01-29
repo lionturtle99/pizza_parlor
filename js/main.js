@@ -4,9 +4,9 @@ function Pizza(size, toppings) {
   this.price = 0;
 }
 Pizza.prototype.checkForSize = function() {
-    if (this.size === "18'") {
+    if (this.size === "18") {
       this.price += 20;
-    } else if (this.size === "24'") {
+    } else if (this.size === "24") {
       this.price += 25;
     } else {
       this.price += 30;
@@ -35,5 +35,8 @@ $(document).ready(function() {
       pizzaToppings.push($(this).val());
     });
     let pizzaOrder = new Pizza(pizzaSize, pizzaToppings);
+    pizzaOrder.checkForSize()
+    $("#output").append("<p>Order up! That'll be $" + pizzaOrder.price + "</p>");
+    $(".speech-div").fadeIn();
   });
 });

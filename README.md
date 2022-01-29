@@ -1,8 +1,14 @@
 # _Pizza-Parlor_
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 #### By: _**Liam Eller**_
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 #### _a webpage practicing objects and prototypes_
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## Technologies Used
 
@@ -12,36 +18,48 @@
 * _Javascript_
 * _jQuery_
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 ## Description
 
 _A webpage where you can order a custom pizza_
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 ## Setup/Installation Requirements
 
-* _Clone the repository from GitHub_
-* _Open the webpage in your preferred browser_
+* _To download onto your personal device: Click the green "Code" button in the top right of the github repository, from the dropdown, select the "Download Zip" option, Once the file has finished downloading, navigate to your computers downloads and right click, select open with Archive Utility for macs (or whatever un-compress application your computer has), open file directory and open index.html in your browser or text editor application._
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## Known Bugs
 
 _None_
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_  
   
 Copyright (c) _01/28/2022_ _Liam Eller_  
-  
-# Test Driven Development:
 
-### --- Describe Pizza! ---
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+  
+# Test Driven Development
+  
+  
+### Describe Pizza! 
+  
 
 Test: "It should create a pizza object with the correct properties"
 
 Code: let pizza = new Pizza("18', ["res-sauce", "cheese", "pepperoni"])
 
 Expected Output: pizza{size: toppings:}
-
-### --- Describe Pizza.prototype.formula ---  
+  
+  
+### Describe Pizza.prototype.checkForSize   
   
 Test: "It should check the size of the pizza order and add the base price"  
   
@@ -61,6 +79,9 @@ Code: let pizza1 = new Pizza(24, [1, 4, 5, 6]);
 Expected outcome: "The price of your pizza is $25" 
   
   
+### Describe Pizza.prototype.checkForToppings  
+  
+  
 Test: "It should loop through toppings"  
   
 Code: let pizza = new Pizza("18', ["res-sauce", "cheese", "pepperoni"]);   
@@ -72,8 +93,9 @@ Code: let pizza = new Pizza("18', ["res-sauce", "cheese", "pepperoni"]);
    
 Expected outcome: "res-sauce", "cheese", "pepperoni"   
   
+  
 Test: "It should check topping and add price accordingly"  
-
+  
 Code: let pizza = new Pizza("18', ["res-sauce", "cheese", "pepperoni"]);    
   Pizza.prototype.checkForToppings = function() {  
     this.toppings.forEach(function(i) {  

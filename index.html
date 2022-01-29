@@ -10,17 +10,17 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
+  <div class="jumbotron">
+    <h1 class="display-4">Michaelangelo's Pizza</h1>
+  </div>
   <div class="container">
     <div class="flying">
       <img src="img/flying-pizza.png" alt="image of a pizza">
     </div>
-    <div class="heading">
-      <h1>Michaelangelo's Pizza</h1>
-    </div>
     <div class="inner-container">
       <form id="pizza-order">
-        <div class="row sizing">
-          <div class="col-12">
+        <div class="row row1">
+          <div class="col-6">
             <P>Pizza comes in three sizes:</P>
               <img src="img/baby-turtles.png" alt="image of a pizza">
             <div class="form-group">
@@ -35,6 +35,9 @@
               <input type="radio" name="size" value="32">
               <label>32 inch for $30</label>
             </div>
+          </div>
+          <div class="col-6">
+            <button type="submit" class="btn btn-danger">Order</button>
           </div>
         </div>
         <div class="row">
@@ -52,24 +55,24 @@
               <label>prosciutto $3</label>
             </div>
             <div class="form-group">
-              <input type="checkbox" name="topping" value="olives"> 
-              <label>Olives $1</label>
+              <input type="checkbox" name="topping" value="artichokes"> 
+              <label>artichokes $2</label>
             </div>
             <div class="form-group">
               <input type="checkbox" name="topping" value="arugula"> 
-              <label>Arugula $1</label>
+              <label>Arugula $2</label>
             </div>
             <div class="form-group">
-              <input type="checkbox" name="topping" value="peppers"> 
-              <label>Peppers $1</label>
+              <input type="checkbox" name="topping" value="mama lil peppers"> 
+              <label>mama lil peppers $1</label>
             </div>
             <div class="form-group">
-              <input type="checkbox" name="topping" value="onions">
-              <label>Onions $1</label>
+              <input type="checkbox" name="topping" value="pineapple">
+              <label>pineapple $2</label>
             </div>
             <div class="form-group">
-              <input type="checkbox" name="topping" value="mushrooms">
-              <label>Mushrooms $1</label>
+              <input type="checkbox" name="topping" value="sun dried tomato">
+              <label>sun dried tomato $2</label>
             </div>
           </div>
           <div class="col-6">
@@ -112,8 +115,12 @@
     <div class="row2 row">
       <div class="col-12">
         <div class="gif-div">
-          <img src="img/ninja-gif.gif" alt="image of a pizza">
+          <img src="img/ninja-gif.gif" alt="gif of a teenage mutant ninja turtle">
         </div>
+      </div>
+      <div class="speech-div">
+        <div id="output"></div>
+        <img src="img/bubble.png" alt="an image of a speech bubble">
       </div>
       <footer><small>Best Pizza under the city!</small></footer>
     </div>
