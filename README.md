@@ -1,4 +1,4 @@
-# _Pizza-Parlor_
+# _Pizza Parlor_
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
